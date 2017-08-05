@@ -39,7 +39,7 @@
         <div class="reveal"><div class="slides">
             <section data-markdown data-separator="\n---\n$" data-vertical="\n--\n">
                 <script type="text/template">
-Vim for PHP  
+# Vim for PHP  
 PHP BLT #8
 
 ---
@@ -57,7 +57,7 @@ PHP BLT #8
 
 ---
 
-## Vimとは
+# Vimとは
 
 ---
 
@@ -74,7 +74,7 @@ Vimはオランダ人のプログラマーBram MoolenaarによってAmiga向け�
 ```
 ---
 
-## Install方法
+# Install方法
 
 ---
 
@@ -94,61 +94,141 @@ Vimはオランダ人のプログラマーBram MoolenaarによってAmiga向け�
 
 ---
 
-## 最近のVimはすごい
+# PHPにはPHPStorm?
 
 ---
 
-## 統合ユーザインターフェース
+## PHPにはPHPStorm?
 - - -
-* [Unite](https://github.com/Shougo/unite.vim) / [Denite](https://github.com/Shougo/denite.nvim)
-* [CtrlP](https://github.com/kien/ctrlp.vim)
-
 <br />
+<br />
+<br />
+<br />
+Yes. PHPStorm もいいよね。  
+でも、Vimが好きなんだ。
+
+---
+
+## Vimの機能を紹介
+
+---
+
+## タブ・画面分割
+- - -
+
+<img src="img/vim1.gif" height="480px" />
+
+---
+
+## タブ・ステータスバー
+- - -
+
+<img src="img/vim2.png" height="480px" />
+
+---
+
+## タブ・ステータスバー
+- - -
+
+<img src="img/vim3.png" height="480px" />
+
+---
+
 ## ファイラー
 - - -
-* [NERDTree](https://github.com/scrooloose/nerdtree)
-* [Vimfiler](https://github.com/Shougo/vimfiler.vim)
-* Netrw (default)
+[NERDTree](https://github.com/scrooloose/nerdtree)、[Vimfiler](https://github.com/Shougo/vimfiler.vim)、Netrw (default)とかが有名です。
+
+<img src="img/vim4.gif" height="480px" />
 
 ---
 
-## タブ
-- - -
-もちろんあります。
+## 一般的なエディタに出来る事は  
+## Vimも出来ます。
 
+---
+
+## ただ、
+## Vimにも欠点が...
+
+---
+
+## Ice Break:Vimの欠点
+- - -
 <br />
 <br />
-## 水平分割/垂直分割
-- - -
-もちろんあります。
+マウスを使わないがあまりに  
+マウスを使う機能が億劫になります。
 
 ---
 
-## Coffee break☕
+## Ice Break:Vimの欠点
 - - -
-ここまでのおさらい
-<img src="img/vim1.gif" />
+<br />
+<br />
+Macでフルスクリーンにすると  
+時刻と充電率がわからなくなる問題
+<br />
+<br />
+<br />
+<p class="center">当事者的にはすごく深刻でした。</p>
 
 ---
 
-#### 一般的なエディタに出来る事はVimも出来ます。
-#### さらに、IDEのような機能を追加してみます。
+## Ice Break:Vimの欠点
+- - -
+
+その結果がこれ。
+
+<img src="img/vim5.png" height="480px" />
 
 ---
 
-## 補完機能
+## Ice Break  以上
+
+---
+
+## grep
 - - -
-VimにはOmni補完機能がデフォルトで備わっています。  
+vimgrep、外部ツール(ag,grep,etc)をサポートしてます。
+
+<img src="img/vim6.gif" height="480px" />
+
+---
+
+## grep
+- - -
+grep結果からの置換もサポート。
+
+<img src="img/vim7.gif" height="480px" />
+
+---
+
+## タグジャンプ
+- - -
+ctags系サポートしています。
+
+<img src="img/vim8.gif" height="480px" />
+
+---
+
+余談ですが、  
+Universal Ctagsのメンテナになりました。
+
+---
+
+## 補完
+- - -
+VimにはOmni補完がデフォルトで備わっています。  
 Pluginを入れるのに抵抗がある方でも安心です。
 
-ここではリッチな補完機能を紹介します。
+ここではリッチな補完を紹介します。
 
 * [neocomplete](https://github.com/Shougo/neocomplete.vim)
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
 ---
 
-## スニペット機能
+## スニペット
 - - -
 スニペットとは
 ```
@@ -168,54 +248,38 @@ Pluginを入れるのに抵抗がある方でも安心です。
 
 ---
 
-## タグジャンプ
+## 補完・スニペット
 - - -
-ctags系に対応しています。
-
-<br />
-<br />
-## class/function一覧
-- - -
-
-[taglist](https://github.com/vim-scripts/taglist.vim) が比較的有名です。
+スニペットに全てを委ねるのが楽ですよね。
+<img src="img/vim9.gif" />
 
 ---
 
-## Coffee break☕
+## その他
 - - -
-ここまでのおさらい
-<img src="img/vim2.gif" />
-
----
-
-#### スニペットがいい感じに効いてたのが、
-#### ご覧頂けましたでしょうか。
-
----
-
-## Plugin管理
-- - -
-たくさんのPluginを紹介しましたが、  
-個別でインストールするのは大変です。  
-そこで、Plugin管理を利用するのが一般的です。
-<br />
-<br />
-
-* 本体
-* [dein](https://github.com/Shougo/dein.vim)
-* [vim-plug](https://github.com/junegunn/vim-plug)
+* プログラム実行
+* テストコード実行
+* シンタックスチェック
+* etc
 
 ---
 
 ## もしかして：PHP関係ない...?
+- - -
+<br />
+<br />
+<br />
+設定さえしっかり行えば、  
+だいたいの言語で活躍します。
 
 ---
 
 ## [広告]PHPについて
 - - -
-手前味噌ではありますが、[VimでPHP開発環境を作成](http://qiita.com/NanohaAsOnKai/items/0188fb3b60e8a79656a0)が非常に参考になります。  
 <br />
-この記事ではPHPのみにフォーカスを当てているため、今回紹介したVimの機能と組み合せる事で良い感じになります。
+<br />
+<br />
+詳細は[VimでPHP開発環境を作成](http://qiita.com/NanohaAsOnKai/items/0188fb3b60e8a79656a0) で
 
 ---
 
@@ -236,9 +300,7 @@ ctags系に対応しています。
 
  機会があったら積極的に触っていきましょう。
 
-* Vimに興味が湧いた方
-
- [Lingr](http://lingr.com/room/vim)というチャット部屋に ~~怖い~~ ギャグセンスのあるオジさん達がいるため、お気軽に質問すると良いと思います。
+* 開発環境は好きなものを使うのが１番
 
 ---
 
@@ -257,8 +319,8 @@ ctags系に対応しています。
                 slideNumber: true,
                 history:     true,
                 loop:        false,
-                //autoSlide:   15000,
-                transition:  'slide', // none/fade/slide/convex/concave/zoom
+                //autoSlide: 15000,
+                transition:  'fade', // none/fade/slide/convex/concave/zoom
 
                 // Optional reveal.js plugins
                 dependencies: [
@@ -268,15 +330,14 @@ ctags系に対応しています。
                     { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
                     { src: 'plugin/zoom-js/zoom.js',        async: true },
                     { src: 'plugin/notes/notes.js',         async: true }]});
-            Reveal.addEventListener('slidechanged', function( event )
-                {
-                    //Center
-                    if (-1 < $.inArray(Reveal.getState().indexh, [0, 2, 4, 5, 6, 10, 13, 15, 17, 21])) {
-                        Reveal.configure({ center: true });
-                    } else {
-                        Reveal.configure({ center: false });
-                    }
-                });
+            Reveal.addEventListener('slidechanged', function(event) {
+                //Center
+                if (-1 < $.inArray(Reveal.getState().indexh, [0, 2, 4, 5, 6, 8, 10, 13, 14, 18, 22, 31])) {
+                    Reveal.configure({ center: true });
+                } else {
+                    Reveal.configure({ center: false });
+                }
+            });
         </script>
     </body>
 </html>
